@@ -1,0 +1,105 @@
+{
+  "1": {
+    "id": 1,
+    "title": "General Knowledge Quiz",
+    "description": "Test your general knowledge with this quiz!",
+    "pointsToPass": 2,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": ["Berlin", "Madrid", "Paris", "Rome"],
+        "answer": 2
+      },
+      {
+        "id": 2,
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": [
+          "Harper Lee",
+          "Mark Twain",
+          "Ernest Hemingway",
+          "F. Scott Fitzgerald"
+        ],
+        "answer": 0
+      },
+      {
+        "id": 3,
+        "question": "What is the largest planet in our solar system?",
+        "options": ["Earth", "Jupiter", "Mars", "Saturn"],
+        "answer": 1
+      }
+    ]
+  },
+  "2": {
+    "id": 2,
+    "title": "Science Quiz",
+    "description": "Challenge your science knowledge with this quiz!",
+    "pointsToPass": 2,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "O2", "CO2", "NaCl"],
+        "answer": 0
+      },
+      {
+        "id": 2,
+        "question": "Who developed the theory of relativity?",
+        "options": [
+          "Isaac Newton",
+          "Albert Einstein",
+          "Galileo Galilei",
+          "Nikola Tesla"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the speed of light in a vacuum?",
+        "options": [
+          "300,000 km/s",
+          "150,000 km/s",
+          "450,000 km/s",
+          "600,000 km/s"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "title": "History Quiz",
+    "description": "Test your history knowledge with this quiz!",
+    "pointsToPass": 2,
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who was the first President of the United States?",
+        "options": [
+          "George Washington",
+          "Thomas Jefferson",
+          "Abraham Lincoln",
+          "John Adams"
+        ],
+        "answer": 0
+      },
+      {
+        "id": 2,
+        "question": "In which year did World War II end?",
+        "options": ["1945", "1939", "1918", "1963"],
+        "answer": 0
+      },
+      {
+        "id": 3,
+        "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+        "options": [
+          "Joseph Stalin",
+          "Nikita Khrushchev",
+          "Leonid Brezhnev",
+          "Mikhail Gorbachev"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}
