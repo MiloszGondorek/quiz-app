@@ -60,6 +60,7 @@ export default function QuizGenerator() {
           type="text"
           placeholder="Enter question"
           className="input w-full mt-2"
+          value={questionState.question}
           onChange={(e) => {
             questionDispatch({ type: "setQuestion", question: e.target.value });
           }}
@@ -104,6 +105,7 @@ export default function QuizGenerator() {
         <h3 className="mt-2">Correct Option</h3>
         <input
           type="number"
+          value={questionState.correctOption + 1}
           placeholder="Enter correct option number (starting from 0)"
           className="input w-full mt-2"
           onChange={(e) => {
@@ -117,7 +119,11 @@ export default function QuizGenerator() {
         <button
           className="btn mt-5"
           onClick={() => {
-            quizDispatch({ type: "addQuestion", question: questionState });
+            quizDispatch({
+              type: "addQuestion",
+              question: questionState,
+              questionDispatch,
+            });
           }}
         >
           Add question
@@ -193,6 +199,7 @@ function quizReducer(state: any, action: any) {
     ) {
       return state;
     }
+    action.questionDispatch({ type: "reset" });
     return {
       ...state,
       questions: [...state.questions, action.question],
@@ -240,6 +247,12 @@ function questionReducer(state: any, action: any) {
     return {
       ...state,
       correctOption: action.correctOption - 1,
+    };
+  } else if (action.type === "reset") {
+    return {
+      question: "",
+      options: [],
+      correctOption: 0,
     };
   }
   return state;
